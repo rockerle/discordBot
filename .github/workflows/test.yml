@@ -6,7 +6,6 @@ on:
 jobs:
   CnD:
     runs-on: self-hosted
-    image: ubuntu:
     steps:
       - name: "Checkout Repository"
         uses: actions/checkout@v4
