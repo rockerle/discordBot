@@ -6,9 +6,12 @@ on:
 jobs:
   CnD:
     runs-on: self-hosted
+    image: ubuntu:
     steps:
       - name: "Checkout Repository"
         uses: actions/checkout@v4
+      - name: "who am I?"
+        run: whoami
       - name: "My self made build and deploy"
         uses: rockerle/buildNdeploy-docker@v1
         with:
