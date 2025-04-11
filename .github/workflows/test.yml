@@ -12,6 +12,7 @@ jobs:
       - name: "My self made build and deploy"
         uses: rockerle/buildNdeploy-docker@v1
         with:
-          imagename: "rockerle/ptws:latest"
-          containername: "ptws"
-          restartpolicy: "no"
+          imagename: "rockerle/testcontainer:latest"
+          containername: "testcontainer"
+        env:
+          anything: "anything I guess"
