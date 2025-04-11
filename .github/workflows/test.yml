@@ -17,3 +17,5 @@ jobs:
           imagename: "test:latest"
           containername: "test"
           restartpolicy: "no"
+        env:
+          p: "8000:8000"
