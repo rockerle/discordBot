@@ -14,6 +14,6 @@ jobs:
       - name: "My self made build and deploy"
         uses: rockerle/buildNdeploy-docker@v1
         with:
-          imagename: "rockerle/test:latest"
+          imagename: "test:latest"
           containername: "test"
           restartpolicy: "no"
