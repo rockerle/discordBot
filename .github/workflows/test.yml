@@ -12,8 +12,7 @@ jobs:
       - name: "My self made build and deploy"
         uses: rockerle/buildNdeploy-docker@v1
         with:
-          imagename: "rockerle/firsttest:latest"
-          containername: "firsttest"
-          restartpolicy: "no"
+          imagename: "rockerle/discordbot:latest"
+          containername: "rockerbot"
         env:
-          p: "8000:8000"
+          BOT_TOKEN: ${{ secrets.bot_token }}
