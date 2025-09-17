@@ -10,7 +10,7 @@ jobs:
       - name: "Checkout Repository"
         uses: actions/checkout@v4
       - name: "My self made build and deploy"
-        uses: rockerle/buildNdeploy-docker@v2
+        uses: rockerle/buildNdeploy-docker@v1
         with:
           imagename: "rockerle/discordbot:latest"
           containername: "rockerbot"
